@@ -39,37 +39,37 @@ To really push it and see just how much of a trend it was, I went and split the 
 ---
 To start, we start with the 1960s. The top artist during this decade was __The Beatles__ with 14 songs in the Top 100 in the five year span. It will be a little harder to see the differences in top words due to them being more scattered, but no need to worry, the results here are similar to the previous data. The top word is "love", followed by "baby", "don't", "know", and "now". It seems like either nobody knows about love, or who their baby is, and whether they're in love right now. I guess we'll have to hear the songs to find out.
 
-![Fig](Images/words_from_1960s.png)
+![Fig](Images/words_of_1960s.png)
 
 ### The 1970s
 ---
 Moving into the 1970s, we had a tie between __Elton John__ and the __Bee Gees__ with 12 songs in the Top 100 each, but I went with Elton John because I saw his name first. As we look at his WordCloud, we see the same trend with "love" taking the first spot, followed by a close tie with "baby", "don't", "know", "got", "you're", "come", and "time".
 
-![Fig](Images/words_from_1970s.png)
+![Fig](Images/words_of_1970s.png)
 
 ### The 1980s
 ---
 In the 1980s, we have __Madonna__ as our top artist with 18 songs in the Billboard Top 100 over the course of the decade. The top words were yet again "love", followed by "don't", "know", "oh", "baby", "time", and "Im".
 
-![Fig](Images/words_from_1980s.png)
+![Fig](Images/words_of_1980s.png)
 
 ### The 1990s
 ---
 Grooving on into the 1990s, we have __Mariah Carey__ as the Top Artist of the decade with 19 songs on the Top 100 over the decade. We have the word "love", followed by "don't", "know", "baby", "oh", "yeah" (songs were getting a little more sensual I guess), "ill", "I'm", "want", and "you're".
 
-![Fig](Images/words_from_1990s.png)
+![Fig](Images/words_of_1990s.png)
 
 ### The 2000s
 ---
 Boy-banding our way into the 2000s, __P!nk__ and __Kelly Clarkson__ were the Top artists with 13 songs each in the Top 100 over the course of the decade (I'll let you decide which artist I used for this one). This time "love" and "Im" actually seem to be relatively close in terms of most common words, followed by the usual suspects "don't", "know", "got", and "girl" moving up in the ranks of most common words. 
 
-![Fig](Images/words_from_2000s.png)
+![Fig](Images/words_of_2000s.png)
 
 ### The 2010s
 ---
 For the 2010s, this data ends at 2015. I might add up to 2019 in the future (if I could find the data), but for right now, __Taylor Swift__ was the Top Artist in the first half with 15 songs in the Top 100. In a surprise twist that's not too visible in this WordCloud, "Im" was actually the number one most common word, followed by "love", "don't", "know", "baby", "oh", "yeah", "girl", "let", "make", "you're", and "now".
 
-![Fig](Images/words_from_2010s.png)
+![Fig](Images/words_of_2010s.png)
 
 ## The Conclusion
 
