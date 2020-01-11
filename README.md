@@ -1,5 +1,5 @@
 # Analysis of the Billboard Top 100 Songs from 1964-2015 
---- 
+
 I found this dataset not too long ago, and when I went to check it out I had some questions.
 
 - First, I was curious about who had been in the Top 100 Billboard songs the most.
@@ -8,7 +8,7 @@ I found this dataset not too long ago, and when I went to check it out I had som
 So I took all these questions, and this is what I found.
 
 ## Part 1: The Top Artist of ALL TIME
----
+
 To answer the first question, I made a for loop that would take each artist and insert them into a dictionary, along with a count of how many times they appeared on the Billboard Top 100. If they showed up more than once, we added to the number that is in the dictionary. Then, I used a max function to pull out which value was the highest in the dictionary. 
 
 Now, because I didn't know what to expect here and how many artists would show up how many times, I made a for loop that went through the dictionary and every time the max highest value showed up, it would print out that artists name. After running this loop, I found that __Madonna__ was the only artist that had been on the Billboard Top 100 for a total of 35 times.
@@ -21,7 +21,7 @@ Once I had that dictionary in place, I ran another dictionary comprehension to s
 
 
 ## Part 2: The Most Common Lyrics as shown via WordCloud
----
+
 At this point, I was ready to start looking at the actual lyrics from the songs themselves. I first checked to see what the most common words were among ALL the lyrics from 1965 to 2015 and make it into a WordCloud. In order to do this, I had to first create a for loop to take each of the lyrics from their songs and split up the lyrics into tokens, basically each word by themselves, and then append it to one major string where all the lyrics would be held. I also converted the words into all lowercase, just to be sure that they weren't counted individually when creating the WordCloud. I then set up my WordCloud with the appropriate parameters, setting the height and width, the background color, the scaling, ensuring that collections were turned off so each word was counted individually, and setting the Stop Words, words that are not necessary to word analysis e.g "the", "a", "an", etc. From there, I set up the plotting parameters, and then let the cell run and do its thing. It took about 15 minutes maybe to run through all 5100 songs, do the operations, and then make the WordCloud, and I must say that the results were not all that surprising.
 
 The way that WordClouds work is that the bigger the word is, the more frequent it appeared inside the lyrics. With this being said, the number one word was "love", and to be honest, I can't say that I'm surprised. Love is universal, and a very popular topic to write/sing about, and this helps to prove that. After love, the word "Im" takes second, which if I had to guess, the word that would have been next to this word is "in", but that's a stop word so it doesn't count it. After that are words like "don't", "baby", "know", "oh", "want" and "you're". I'm pretty sure that if we tried, we could write a hit song about love from the words that are in this WordCloud.
@@ -60,7 +60,7 @@ For the 2010s, this data ends at 2015. I might add up to 2019 in the future (if 
 
 
 ## The Conclusion
----
+
 Overall, the data seemed to prove kind of what had already been known by probably most of the world already, that love is the thing that brings everybody together, and we just can't stop singing about it. *Really, let's be original people.* <-- __Sarcasm__
 
 I hope that you enjoyed going through this extensive research (that was a lot of the same stuff), and in my next attempt, I'll try to find the data for the last half the decade, and maybe, just maybe, I try and write some code that will let me generate some lyrics based on these most common words.
