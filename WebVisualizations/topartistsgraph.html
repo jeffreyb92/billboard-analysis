@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,500,600&display=swap" rel="stylesheet">
+
+    <title>Billboard Analysis/Top Artists Graph</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarthings">
+      <a class="navbar-brand" id="navbarbrand" href="../index.html">Jeffrey Burgos/Billboard Analysis/Top Artists Count</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" id="navbardropdownfonts">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Visualizations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbardropdown">
+              <a class="dropdown-item" href="topartistsgraph.html">Top Artists by the Numbers</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="allartists.html">All Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="topartists.html">Top Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="1960artists.html">1960's Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="1970artists.html">1970's Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="1980artists.html">1980's Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="1990artists.html">1990's Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="2000artists.html">2000's Artists WordCloud</a>
+              <div class="dropdown-divider" id="dropdowndivider"></div>
+              <a class="dropdown-item" href="2010artists.html">2010's Artists WordCloud</a>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Container Starts -->
+    <div class="custom-container container-fluid">
+
+      <div class="row justify-content-around" id="rowpad">
+        <div class="col-md-7 h-100" id="columnpad">
+          <section class="sectionfont">Top Artists Bar Chart</section>
+          <hr>
+          <img class="img-fluid" src="visualizations/top_artists.png" alt="graph of top artists">
+          <p> Now, because I didn't know what to expect here and how many artists would 
+            show up how many times, I made a for loop that went through a dictionary I made 
+            and every time the max highest value showed up, it would print out that artists name. 
+            After running this loop, I found that <strong>Madonna</strong> was the only artist 
+            that had been on the Billboard Top 100 for a total of 35 times.
+            <br>
+            After I found that out, I was curious to see how many people had been on the 
+            Billboard Top 100 more than 10 times, theorizing that if they are to be well-known 
+            artists then they would probably have been on it multiple times. So I wrote a dictionary 
+            comprehension (like a for loop but in one line of code) to loop the dictionary I just 
+            made and set a value that had to be equal or greater than 10 in order to make the cut.
+            <br>
+            Once I had that dictionary in place, I ran another dictionary comprehension to sort 
+            the dictionary from the greatest number to the least number, that way when I plot it, 
+            it will be easier to see who had how many songs on the charts. From there, I plotted it 
+            as a bar chart since it was just a single value, and did some small formatting so it 
+            was easier to read the artists names. Take a look and count to see how many artists you 
+            know that are in this chart!
+          </p>
+        </div>
+        <div class="col-md-4" id="columnpad">
+          <div class="sectionfont">Visualizations</div>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="topartists.html"><img class="img-fluid" src="visualizations/words_from_top_artists.png" alt=""></a>
+            </div>
+            <div class="col-md-6">
+              <a href="allartists.html"><img class="img-fluid" src="visualizations/words_from_all_artists.png" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="1960artists.html"><img class="img-fluid" src="visualizations/words_of_1960s.png" alt=""></a>
+            </div>
+            <div class="col-md-6">
+              <a href="1970artists.html"><img class="img-fluid" src="visualizations/words_of_1970s.png" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="1980artists.html"><img class="img-fluid" src="visualizations/words_of_1980s.png" alt=""></a>
+            </div>
+            <div class="col-md-6">
+              <a href="1990artists.html"><img class="img-fluid" src="visualizations/words_of_1990s.png" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="2000artists.html"><img class="img-fluid" src="visualizations/words_of_2000s.png" alt=""></a>
+            </div>
+            <div class="col-md-6">
+              <a href="2010artists.html"><img class="img-fluid" src="visualizations/words_of_2010s.png" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 activestate">
+              <a href="topartistsgraph.html"><img class="img-fluid" src="visualizations/top_artists.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Container Ends -->
+
+    <footer id="footerthings">
+      <p>Powered By HTML, CSS, Bootstrap</p>  
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
